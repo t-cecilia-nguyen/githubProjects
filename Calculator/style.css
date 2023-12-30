@@ -4,7 +4,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: darkgray;
+    background-image: linear-gradient(to top left, #393f4d, #1d1e22);
   }
 
 #main_container {
@@ -15,29 +15,75 @@ body {
   height: 100vh;
 }
 
+div#main_container > * {
+  color: white;
+}
+
 #calculator {
   display: grid;
-  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5)}
+  box-shadow: 10px 10px 10px 0px rgba(0,0,0,0.5);
+}
 
 #calc_display {
-    display: flex;
-    justify-content: flex-end;
+    height: 67.2px;
+    max-width: 237.55px; 
+    overflow-x: auto;
+    white-space: nowrap;
     font-size: 40px;
-    background-color: #12343b;
-    color: #fff;
-    text-align: right;
-    width: 100%;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
     padding-top: 15px;
     padding-right: 10px;
-    border: 1px solid black;
+    padding-left: 10px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
     box-sizing: border-box;
+    background-color: #103036;
+    color: #fff;
+    text-align: right;
+    overflow-y: hidden;
   }
+
+#calc_display::-webkit-scrollbar {
+  height: 5px;
+}
+
+#calc_display::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #1d1e22;
+}
+
+#calc_display::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #c39e68; 
+    }
+
+#calc_display::-webkit-scrollbar-thumb:hover {
+  background-color: #e1b382; 
+}
+
+#calc_answer {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 15px;
+  background-color: #103036;
+  color: #fff;
+  text-align: right;
+  width: 100%;
+  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-right: 10px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-sizing: border-box;
+}
 
 .calc_keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  max-width: 400px;
   }
 
 button {
@@ -45,21 +91,42 @@ button {
     padding: 15px;
     font-size: 20px;
     text-align: center;
-    background-color: #12343b;
     color: #fff;
     border: 1px solid black;
     cursor: pointer;
     box-sizing: border-box;
   }
 
-  .calc_keys button.operator {
+  .calc_keys button.number, 
+  .calc_keys button.decimal {
+    background-color: #12343b;
+    transition: 0.3s;
+  }
+
+  .calc_keys button.number:hover, 
+  .calc_keys button.decimal:hover {
+    background-color: #0c282e;
+    transition: 0.3s;
+  }
+
+  .calc_keys button.operator,
+  .calc_keys button.extra {
     background-color: #2d545e;
+    transition: 0.3s;
+  }
+
+  .calc_keys button.operator:hover,
+  .calc_keys button.extra:hover {
+    background-color: #273d47;
+    transition: 0.3s;
   }
 
   .calc_keys button.equal {
     background-color: #e1b382;
+    transition: 0.3s;
   }
 
-  .calc_keys button.extra {
-    background-color: #2d545e;
+  .calc_keys button.equal:hover {
+    background-color: #c39e68;
+    transition: 0.3s;
   }
