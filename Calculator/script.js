@@ -73,8 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Button =
     equal_button.addEventListener('click', calculateResult);
 
-    
-
     // Functions
     function isNumber(value) {
         var lastChar = value.charAt(value.length - 1);
@@ -134,5 +132,4 @@ document.addEventListener('DOMContentLoaded', function () {
         newValue = value.replace('.', '');
         return newValue.length < 8;
     }
-    
 });
