@@ -1,0 +1,12 @@
+#dollar_input {
+    position: relative;
+    margin: auto;
+    width: 300px;
+}
+
+#coin_amounts {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    text-align: center;
+}

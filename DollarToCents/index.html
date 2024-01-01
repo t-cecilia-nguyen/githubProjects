@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dollar to Cents</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="dollar_input">
+        <label for="dollar_amount">Enter dollar amount:</label>
+        <input type="number" id="dollar_amount" required>
+        <button onclick="calculate_coins()">Submit</button>
+    </div>
+    <div id="coin_amounts">
+        <table>
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dollars</td>
+                    <td id="dollars"></td>
+                </tr>
+                <tr>
+                    <td>Quarters</td>
+                    <td id="quarters"></td>
+                </tr>
+                <tr>
+                    <td>Dimes</td>
+                    <td id="dimes"></td>
+                </tr>
+                <tr>
+                    <td>Nickels</td>
+                    <td id="nickels"></td>
+                </tr>
+                <tr>
+                    <td>Pennies</td>
+                    <td id="pennies"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
