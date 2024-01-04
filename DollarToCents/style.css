@@ -1,12 +1,56 @@
-#dollar_input {
-    position: relative;
-    margin: auto;
-    width: 300px;
+html{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
-#coin_amounts {
-    position: relative;
-    width: 300px;
-    margin: auto;
+#intro {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+#dollar_input {
     text-align: center;
 }
+
+#dollar_input label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#dollar_input input {
+    width: 100px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: 5px; 
+    padding: 10px;
+}
+
+#dollar_input button {
+    display: inline-block;
+    color: #8e24aa;
+    background-color: white;
+    border: 2px solid #8e24aa;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+}
+
+#dollar_input button:hover {
+    background-color: #8e24aa;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+
+#coin_amounts {
+    margin-top: 20px;
+    text-align: center;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+

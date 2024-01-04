@@ -4,17 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dollar to Cents</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
+    <div id="intro">
+        <h1>Dollars To Cents</h1>
+        <p>Convert dollars to cents</p>
+    </div>
     <div id="dollar_input">
         <label for="dollar_amount">Enter dollar amount:</label>
         <input type="number" id="dollar_amount" required>
         <button onclick="calculate_coins()">Submit</button>
     </div>
     <div id="coin_amounts">
-        <table>
+        <table class="center">
             <thead>
                 <tr>
                     <th>Coin</th>
